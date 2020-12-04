@@ -48,7 +48,7 @@
 #tab::switchDesktopToLastOpened()
 
 #c::createVirtualDesktop()
-#d::deleteVirtualDesktop()
+;#d::deleteVirtualDesktop()
 
 +#1::MoveCurrentWindowToDesktop(1)
 +#2::MoveCurrentWindowToDesktop(2)
