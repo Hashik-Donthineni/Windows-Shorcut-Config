@@ -60,6 +60,15 @@
 +#8::MoveCurrentWindowToDesktop(8)
 +#9::MoveCurrentWindowToDesktop(9)
 
-
+;Open specific applications
 #b::Run, Brave
 #t::Run, Explorer
+
+; Close current window
++#q:: 
+WinGetTitle, Title, A
+PostMessage, 0x112, 0xF060,,, %Title%
+return
+
+;Maximize window
+#w::WinMaximize, A 
